@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Timer1 : MonoBehaviour
+public class Timer2 : MonoBehaviour
 {
-    public float totalTime = 60.0f; // Total time for the timer
+    public float totalTime = 180.0f; // Total time for the timer
     private float currentTime; // Current time left on the timer
     public TextMeshProUGUI timerText; // Reference to the UI text to display the timer
 
@@ -39,4 +39,3 @@ public class Timer1 : MonoBehaviour
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
-
