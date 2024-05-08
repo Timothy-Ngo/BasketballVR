@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
 
             // Update the count display.
             SetCountText();
+
         }
     }
 
