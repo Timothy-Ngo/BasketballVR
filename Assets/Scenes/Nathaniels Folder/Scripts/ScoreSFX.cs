@@ -17,11 +17,12 @@ public class ScoreSFX : MonoBehaviour
         
     }
 
-    public void OnCollisionEnter(Collision col)
+    public void OnTriggerEnter(Collision col)
     {
         if (col.gameObject.CompareTag("PickUp"))
         {
-            ScorePointSFX.PlayOneShot(ScorePointSFX.clip, 1);
+            //Debug.Log("Pick up sound");
+            //ScorePointSFX.PlayOneShot(ScorePointSFX.clip, 1);
         }
     }
 }

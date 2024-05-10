@@ -19,6 +19,9 @@ public class BasketballScore : MonoBehaviour
     // UI object to display winning text.
     public GameObject winTextObject;
 
+    // Score SfX
+    public AudioSource scoreSFX;
+
     // Start is called before the first frame update.
     void Start()
     {
@@ -47,6 +50,9 @@ public class BasketballScore : MonoBehaviour
 
             // Update the count display.
             SetCountText();
+
+            Debug.Log("Play Sound");
+            scoreSFX.PlayOneShot(scoreSFX.clip, 1f);
 
         }
     }
