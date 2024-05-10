@@ -5,13 +5,13 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
 
-public class PlayerController : MonoBehaviour
+public class BasketballScore : MonoBehaviour
 {
     // Rigidbody of the ball
     private Rigidbody rb;
 
     // Variable to keep track of collected "PickUp" objects.
-    private int count;
+    public int count;
 
     // UI text component to display count of "PickUp" objects collected.
     public TextMeshProUGUI countText;
